@@ -53,7 +53,19 @@ $manifest.config.files = $configHashMap
 $manifest.dataVersion = (Get-Date).ToUniversalTime().ToString("yyyy.MM.dd-HH.mm")
 
 # Write manifest back
-$manifest | ConvertTo-Json -Depth 20 | Out-File $manifestPath -Encoding utf8
+# Use jq for consistent formatting (matches zsh script behavior)
+$jsonContent = $manifest | ConvertTo-Json -Depth 20
+# Use temp file to avoid PowerShell pipe encoding issues
+$tempFile = [System.IO.Path]::GetTempFileName()
+try {
+    # Write JSON to temp file (with newlines preserved)
+    [System.IO.File]::WriteAllText($tempFile, $jsonContent, [System.Text.Encoding]::UTF8)
+    # Format with jq - capture as array and join to preserve newlines
+    $formatted = & jq . $tempFile | Out-String
+    [System.IO.File]::WriteAllText($manifestPath, $formatted, [System.Text.Encoding]::UTF8)
+} finally {
+    Remove-Item $tempFile -ErrorAction SilentlyContinue
+}
 
 Write-Host "manifest.json updated successfully"
 Write-Host ("dataVersion set to " + $manifest.dataVersion)
