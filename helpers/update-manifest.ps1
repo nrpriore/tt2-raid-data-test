@@ -1,12 +1,30 @@
+# Get format version parameter (required; this script only updates versioned folders like v2/)
+param(
+    [Parameter(Mandatory = $true)]
+    [ValidateRange(2, 2147483647)]
+    [int]$FormatVersion
+)
+
 $ErrorActionPreference = "Stop"
 
-$manifestPath = "manifest.json"
-$dataDir = "data"
-$configDir = "config"
+# Determine base path based on format version
+$basePath = "v$FormatVersion"
+$baseUrlPath = "v$FormatVersion/"
 
-if (!(Test-Path $manifestPath)) { throw "manifest.json not found" }
-if (!(Test-Path $dataDir)) { throw "data directory not found" }
-if (!(Test-Path $configDir)) { throw "config directory not found" }
+# Resolve repo root relative to this script so it works no matter the current working directory
+$repoRoot = Resolve-Path (Join-Path $PSScriptRoot "..")
+$basePathAbs = Join-Path $repoRoot $basePath
+
+$manifestPath = Join-Path $basePathAbs "manifest.json"
+$dataDir = Join-Path $basePathAbs "data"
+$configDir = Join-Path $basePathAbs "config"
+
+if (!(Test-Path $manifestPath)) { throw "manifest.json not found at $manifestPath" }
+if (!(Test-Path $dataDir)) { throw "data directory not found at $dataDir" }
+if (!(Test-Path $configDir)) { throw "config directory not found at $configDir" }
+
+Write-Host "Updating manifest for format version $FormatVersion"
+Write-Host "Working in: $basePathAbs"
 
 # Load manifest
 $manifest = Get-Content $manifestPath -Raw | ConvertFrom-Json
@@ -38,6 +56,12 @@ foreach ($file in $dataFiles) {
 }
 $manifest.csvData.files = $csvHashMap
 
+# Update csvData baseUrl to point to correct format folder
+if (-not $manifest.csvData.baseUrl) {
+    $manifest.csvData | Add-Member -MemberType NoteProperty -Name baseUrl -Value ""
+}
+$manifest.csvData.baseUrl = "https://nrpriore.github.io/tt2-raid-data/$baseUrlPath" + "data/"
+
 # Hash all config/*.json into config.files
 $configFiles = Get-ChildItem $configDir -Filter *.json
 $configHashMap = @{}
@@ -48,6 +72,12 @@ foreach ($file in $configFiles) {
     Write-Host "Hashed config/$($file.Name)"
 }
 $manifest.config.files = $configHashMap
+
+# Update config baseUrl to point to correct format folder
+if (-not $manifest.config.baseUrl) {
+    $manifest.config | Add-Member -MemberType NoteProperty -Name baseUrl -Value ""
+}
+$manifest.config.baseUrl = "https://nrpriore.github.io/tt2-raid-data/$baseUrlPath" + "config/"
 
 # Bump dataVersion with UTC date+time (minute precision)
 $manifest.dataVersion = (Get-Date).ToUniversalTime().ToString("yyyy.MM.dd-HH.mm")
