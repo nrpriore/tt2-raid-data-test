@@ -1,8 +1,8 @@
 ﻿{
-  "dataVersion": "2026.01.17-06.39",
+  "dataVersion": "2026.02.11-00.40",
   "releaseNotes": {
-    "title": "Max Level Increase!",
-    "description": "Maximum card level increased to 150. See GameHive's patch notes for more details."
+    "title": "Ninja Necrobear Update",
+    "description": "New Necrobear nodes added mid-season. See GameHive's patch notes for more details."
   },
   "csvData": {
     "baseUrl": "https://nrpriore.github.io/tt2-raid-data/v2/data/",
@@ -10,7 +10,7 @@
       "Area.txt": "sha256:e97fa2d2f2694a458c79e18dddc9895a176f5e12257970db6ffef60fdc44f700",
       "RaidResearch.txt": "sha256:c845df39674ef3c0ac821d1200bcb8f173683b3e1b223a5b1731b2130fe9204e",
       "Skill.txt": "sha256:6decdee8b883d4e011063b806a24b68998a3c3ef0edeb66e5d3fddf8d7d5da25",
-      "TitanResearch.txt": "sha256:d18f4cf3492cc8d67317233c6eb823e6e247b4fa1d04330c3ca53a4d18c7fcea",
+      "TitanResearch.txt": "sha256:aa071ecd5de6889ba34bacd93d1b0f71b6f5aa787ca838ccc4fe4de0d7c80073",
       "Level.txt": "sha256:dc51dfb251c5e3fff443f3506834caab772902ad64c68a3909983552b703aceb",
       "Enemy.txt": "sha256:228edd7e427327eaad644bfb244740c056d15c966844a5653e2d05e52b446f11",
       "GemstoneResearch.txt": "sha256:0cab82b4108bc7625187a5043b9cafd1959d90d6d8672b982df77559892cda7e"
