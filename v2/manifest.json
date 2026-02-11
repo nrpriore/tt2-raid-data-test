@@ -1,11 +1,11 @@
 ﻿{
-  "dataVersion": "2026.02.11-00.40",
+  "dataVersion": "2026.02.11-00.48",
   "releaseNotes": {
     "title": "Ninja Necrobear Update",
     "description": "New Necrobear nodes added mid-season. See GameHive's patch notes for more details."
   },
   "csvData": {
-    "baseUrl": "https://nrpriore.github.io/tt2-raid-data/v2/data/",
+    "baseUrl": "https://nrpriore.github.io/tt2-raid-data-test/v2/data/",
     "files": {
       "Area.txt": "sha256:e97fa2d2f2694a458c79e18dddc9895a176f5e12257970db6ffef60fdc44f700",
       "RaidResearch.txt": "sha256:c845df39674ef3c0ac821d1200bcb8f173683b3e1b223a5b1731b2130fe9204e",
@@ -17,7 +17,7 @@
     }
   },
   "config": {
-    "baseUrl": "https://nrpriore.github.io/tt2-raid-data/v2/config/",
+    "baseUrl": "https://nrpriore.github.io/tt2-raid-data-test/v2/config/",
     "files": {
       "season.json": "sha256:c6cf9749ff6f5da3229e5b8ed71681feec3ec64906a2cdc485ad04c9729180e5"
     }

@@ -5,7 +5,7 @@
     "description": "Updated balance for Master Tier Season 15, with 3 new boosted cards. See GameHive's patch notes for more details."
   },
   "csvData": {
-    "baseUrl": "https://nrpriore.github.io/tt2-raid-data/data/",
+    "baseUrl": "https://nrpriore.github.io/tt2-raid-data-test/data/",
     "files": {
       "Enemy.txt": "sha256:228edd7e427327eaad644bfb244740c056d15c966844a5653e2d05e52b446f11",
       "RaidResearch.txt": "sha256:c845df39674ef3c0ac821d1200bcb8f173683b3e1b223a5b1731b2130fe9204e",
@@ -17,7 +17,7 @@
     }
   },
   "config": {
-    "baseUrl": "https://nrpriore.github.io/tt2-raid-data/config/",
+    "baseUrl": "https://nrpriore.github.io/tt2-raid-data-test/config/",
     "files": {
       "season.json": "sha256:c6cf9749ff6f5da3229e5b8ed71681feec3ec64906a2cdc485ad04c9729180e5"
     }

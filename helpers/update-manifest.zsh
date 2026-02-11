@@ -83,10 +83,10 @@ ver="$(date -u +%Y.%m.%d-%H.%M)"
 jq \
   ".csvData |= (. // {}) |
    .csvData.files = { $json_csv } |
-   .csvData.baseUrl = \"https://nrpriore.github.io/tt2-raid-data/${BASE_URL_PATH}data/\" |
+   .csvData.baseUrl = \"https://nrpriore.github.io/tt2-raid-data-test/${BASE_URL_PATH}data/\" |
    .config |= (. // {}) |
    .config.files = { $json_cfg } |
-   .config.baseUrl = \"https://nrpriore.github.io/tt2-raid-data/${BASE_URL_PATH}config/\" |
+   .config.baseUrl = \"https://nrpriore.github.io/tt2-raid-data-test/${BASE_URL_PATH}config/\" |
    .dataVersion = \"$ver\"" \
   "$MANIFEST" > "$MANIFEST.tmp"
 

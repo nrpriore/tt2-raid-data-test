@@ -60,7 +60,7 @@ $manifest.csvData.files = $csvHashMap
 if (-not $manifest.csvData.baseUrl) {
     $manifest.csvData | Add-Member -MemberType NoteProperty -Name baseUrl -Value ""
 }
-$manifest.csvData.baseUrl = "https://nrpriore.github.io/tt2-raid-data/$baseUrlPath" + "data/"
+$manifest.csvData.baseUrl = "https://nrpriore.github.io/tt2-raid-data-test/$baseUrlPath" + "data/"
 
 # Hash all config/*.json into config.files
 $configFiles = Get-ChildItem $configDir -Filter *.json
@@ -77,7 +77,7 @@ $manifest.config.files = $configHashMap
 if (-not $manifest.config.baseUrl) {
     $manifest.config | Add-Member -MemberType NoteProperty -Name baseUrl -Value ""
 }
-$manifest.config.baseUrl = "https://nrpriore.github.io/tt2-raid-data/$baseUrlPath" + "config/"
+$manifest.config.baseUrl = "https://nrpriore.github.io/tt2-raid-data-test/$baseUrlPath" + "config/"
 
 # Bump dataVersion with UTC date+time (minute precision)
 $manifest.dataVersion = (Get-Date).ToUniversalTime().ToString("yyyy.MM.dd-HH.mm")
