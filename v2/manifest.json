@@ -1,11 +1,11 @@
 ﻿{
-  "dataVersion": "2026.03.21-22.25",
+  "dataVersion": "2026.03.21-22.57",
   "releaseNotes": {
     "title": "New Season!",
     "description": "New boosted cards + card reworks! See GameHive's patch notes for more details."
   },
   "csvData": {
-    "baseUrl": "https://nrpriore.github.io/tt2-raid-data-test/v2/data/",
+    "baseUrl": "https://nrpriore.github.io/tt2-raid-data/v2/data/",
     "files": {
       "Area.txt": "sha256:e97fa2d2f2694a458c79e18dddc9895a176f5e12257970db6ffef60fdc44f700",
       "RaidResearch.txt": "sha256:c845df39674ef3c0ac821d1200bcb8f173683b3e1b223a5b1731b2130fe9204e",
@@ -17,9 +17,9 @@
     }
   },
   "config": {
-    "baseUrl": "https://nrpriore.github.io/tt2-raid-data-test/v2/config/",
+    "baseUrl": "https://nrpriore.github.io/tt2-raid-data/v2/config/",
     "files": {
-      "season.json": "sha256:c6cf9749ff6f5da3229e5b8ed71681feec3ec64906a2cdc485ad04c9729180e5"
+      "season.json": "sha256:c1f3b5b19ce9321c8ddc9283d4ab79675292cdd57b7aea94f66b6a2cfeb5cb11"
     }
   }
 }
