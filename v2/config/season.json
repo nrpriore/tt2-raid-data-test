@@ -1,7 +1,7 @@
 {
   "boosts": [
-    { "cardId": 15, "levelBonus": 20 },
-    { "cardId": 18, "levelBonus": 20 },
-    { "cardId": 30, "levelBonus": 10 }
+    { "cardId": 4, "levelBonus": 15 },
+    { "cardId": 6, "levelBonus": 15 },
+    { "cardId": 35, "levelBonus": 15 }
   ]
 }

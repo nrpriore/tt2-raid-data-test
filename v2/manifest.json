@@ -1,15 +1,15 @@
 ﻿{
-  "dataVersion": "2026.02.11-00.48",
+  "dataVersion": "2026.03.21-22.25",
   "releaseNotes": {
-    "title": "Ninja Necrobear Update",
-    "description": "New Necrobear nodes added mid-season. See GameHive's patch notes for more details."
+    "title": "New Season!",
+    "description": "New boosted cards + card reworks! See GameHive's patch notes for more details."
   },
   "csvData": {
     "baseUrl": "https://nrpriore.github.io/tt2-raid-data-test/v2/data/",
     "files": {
       "Area.txt": "sha256:e97fa2d2f2694a458c79e18dddc9895a176f5e12257970db6ffef60fdc44f700",
       "RaidResearch.txt": "sha256:c845df39674ef3c0ac821d1200bcb8f173683b3e1b223a5b1731b2130fe9204e",
-      "Skill.txt": "sha256:6decdee8b883d4e011063b806a24b68998a3c3ef0edeb66e5d3fddf8d7d5da25",
+      "Skill.txt": "sha256:e94d46edd53610326cc5fcaf7a846f89f9c821480082cd4965517e14061d70d3",
       "TitanResearch.txt": "sha256:aa071ecd5de6889ba34bacd93d1b0f71b6f5aa787ca838ccc4fe4de0d7c80073",
       "Level.txt": "sha256:dc51dfb251c5e3fff443f3506834caab772902ad64c68a3909983552b703aceb",
       "Enemy.txt": "sha256:228edd7e427327eaad644bfb244740c056d15c966844a5653e2d05e52b446f11",
