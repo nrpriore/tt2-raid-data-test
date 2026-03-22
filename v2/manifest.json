@@ -1,8 +1,8 @@
 ﻿{
-  "dataVersion": "2026.03.21-23.02",
+  "dataVersion": "2026.03.22-01.55",
   "releaseNotes": {
     "title": "New Season!",
-    "description": "New boosted cards + card reworks! See GameHive's patch notes for more details."
+    "description": "New boosted cards + card reworks - requires v3.6.3 so make sure the sim is up to date! See GameHive's patch notes for more details."
   },
   "csvData": {
     "baseUrl": "https://nrpriore.github.io/tt2-raid-data-test/v2/data/",
