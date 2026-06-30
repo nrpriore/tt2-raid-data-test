@@ -1,5 +1,5 @@
 ﻿{
-  "dataVersion": "2026.06.30-21.52",
+  "dataVersion": "2026.06.30-22.07",
   "releaseNotes": {
     "title": "Almost New Cards!",
     "description": "Updated CSVs for the 2 new cards with current beta balance for preemptive testing, have fun!"
@@ -9,7 +9,7 @@
     "files": {
       "Area.txt": "sha256:e97fa2d2f2694a458c79e18dddc9895a176f5e12257970db6ffef60fdc44f700",
       "RaidResearch.txt": "sha256:c845df39674ef3c0ac821d1200bcb8f173683b3e1b223a5b1731b2130fe9204e",
-      "Skill.txt": "sha256:cc94a9fac078d421b6cc0006c81d65ce170206f230e3fd1cedff6a956720ed74",
+      "Skill.txt": "sha256:a8e65cec57a28bc10c193b7e310a105b873b47d4d00a9c223e1bae79f5282dba",
       "TitanResearch.txt": "sha256:aa071ecd5de6889ba34bacd93d1b0f71b6f5aa787ca838ccc4fe4de0d7c80073",
       "Level.txt": "sha256:dc51dfb251c5e3fff443f3506834caab772902ad64c68a3909983552b703aceb",
       "Enemy.txt": "sha256:9d26aa3732122811547bee796e00bf682e18d48ce4afe8ed23e080b07ca37ffc",
