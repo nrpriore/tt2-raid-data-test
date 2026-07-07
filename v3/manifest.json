@@ -1,8 +1,8 @@
 ﻿{
-  "dataVersion": "2026.07.07-03.00",
+  "dataVersion": "2026.07.07-04.15",
   "releaseNotes": {
     "title": "Almost New Cards!",
-    "description": "Updated CSVs for the 2 new cards with current beta balance for preemptive testing, have fun!"
+    "description": "Updated CSVs for the 2 new cards - however needs 3.7.2 to work correctly so look out for an update soon!"
   },
   "csvData": {
     "baseUrl": "https://nrpriore.github.io/tt2-raid-data-test/v3/data/",
